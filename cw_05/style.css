@@ -1,30 +1,8 @@
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.box{
-    width: 500px;
-    border: 1px solid black;
-    background: antiquewhite;
-    margin: 10px;
-}
-.container div:nth-child(2){
-    background-color: aliceblue;
-}
-
-@media screen and (min-width: 500px) {
-    .container{
-        flex-direction: row;
-    }
-}
-@media screen and (min-width: 900px) {
-    .box{
-        background-color: blue;
-        color: white;
-    }
-}
-.container div:nth-child(2) {
-    color: black;
+.meal{
+    width: 100%;
 }
