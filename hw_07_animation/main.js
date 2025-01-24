@@ -1,17 +1,13 @@
-        const circles = document.querySelectorAll('.circle');
-        const startButton = document.getElementById('start');
-        const stopButton = document.getElementById('stop');
+const circles = document.querySelectorAll('.circle');
 
-        // Animatsiyalarni boshlash funksiyasi
-        startButton.addEventListener('click', () => {
-            circles.forEach(circle => {
-                circle.style.animationPlayState = 'running';
-            });
-        });
+function startAnimation() {
+    circles.forEach(function(circle) {
+        circle.style.animationPlayState = 'running';
+    });
+}
 
-        // Animatsiyalarni to'xtatish funksiyasi
-        stopButton.addEventListener('click', () => {
-            circles.forEach(circle => {
-                circle.style.animationPlayState = 'paused';
-            });
-        });
+function stopAnimation() {
+    circles.forEach(function(circle) {
+        circle.style.animationPlayState = 'paused';
+    });
+}
